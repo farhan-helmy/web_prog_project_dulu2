@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+    <title>Sign Up Form by Colorlib</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">MYrunning Event Registration</h2>
+                        <form class="register-form" action="index.php" method="POST">
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" placeholder="Your Name" required>
+
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" placeholder="Password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" placeholder="Repeat your password" required>
+                            </div>
+                            <div>
+                                <p style="text-align: left;">Event Name</p>
+                            </div>
+                            <div class="custom-select" style="width:200px;">
+                                <select name="eventname" required>
+                                    <option value="myrunning1">MYrunning1</option>
+                                    <option value="myrunning2">MYrunning2</option>
+                                    <option value="myrunning3">MYrunning3</option>
+                                    <option value="myrunning4">MYrunning4</option>
+                                </select>
+                            </div>
+                            <div>
+                                <p style="text-align: left;">No. of tickets</p>
+                            </div>
+                            <div class="custom-select" style="width:100px;">
+                                <select name="tickets" required>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" class="form-submit" value="Register" />
+                                <a href="login.html" class="form-submit">Admin Login</a>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/dropdown.js"></script>
+    <script type="text/javascript" language="javascript">
+        function redirect()
+        {
+            location.href = "successful.html";
+        }
+    </script>
+    
+    
+    <input type="button" value="Add Another Record" onclick="redirect();" />
+    
+    
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+</html>
